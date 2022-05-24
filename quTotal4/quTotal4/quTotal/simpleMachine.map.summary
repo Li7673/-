@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Sat May 21 21:31:06 2022
+Quartus II Version : 8.1 Build 163 10/28/2008 SJ Web Edition
+Revision Name : simpleMachine
+Top-level Entity Name : simpleMachine
+Family : Cyclone II
+Total logic elements : 155
+    Total combinational functions : 155
+    Dedicated logic registers : 104
+Total registers : 104
+Total pins : 96
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

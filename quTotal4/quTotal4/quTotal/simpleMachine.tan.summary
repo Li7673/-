@@ -1,0 +1,246 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : 10.881 ns
+From           : EN1
+To             : move8:inst14|move1:inst27|inst
+From Clock     : --
+To Clock       : CPZZ
+Failed Paths   : 0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 26.285 ns
+From           : R0-R4:inst30|R_8E:inst1|inst7
+To             : RA[2]
+From Clock     : P
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case tpd
+Slack          : N/A
+Required Time  : None
+Actual Time    : 15.826 ns
+From           : EN1
+To             : MDR[7]
+From Clock     : --
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : 6.222 ns
+From           : MAY
+To             : R_8E:inst7|inst11
+From Clock     : --
+To Clock       : P
+Failed Paths   : 0
+
+Type           : Clock Setup: 'P'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 112.42 MHz ( period = 8.895 ns )
+From           : R0-R4:inst30|R_8E:inst|inst15
+To             : R_8E:inst8|inst15
+From Clock     : P
+To Clock       : P
+Failed Paths   : 0
+
+Type           : Clock Setup: 'CK_C'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 112.42 MHz ( period = 8.895 ns )
+From           : R0-R4:inst30|R_8E:inst|inst15
+To             : R_8E:inst8|inst15
+From Clock     : CK_C
+To Clock       : CK_C
+Failed Paths   : 0
+
+Type           : Clock Setup: 'EN1'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 112.42 MHz ( period = 8.895 ns )
+From           : R0-R4:inst30|R_8E:inst|inst15
+To             : R_8E:inst8|inst15
+From Clock     : EN1
+To Clock       : EN1
+Failed Paths   : 0
+
+Type           : Clock Setup: 'EN0'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 112.42 MHz ( period = 8.895 ns )
+From           : R0-R4:inst30|R_8E:inst|inst15
+To             : R_8E:inst8|inst15
+From Clock     : EN0
+To Clock       : EN0
+Failed Paths   : 0
+
+Type           : Clock Setup: 'EN2'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 112.42 MHz ( period = 8.895 ns )
+From           : R0-R4:inst30|R_8E:inst|inst15
+To             : R_8E:inst8|inst15
+From Clock     : EN2
+To Clock       : EN2
+Failed Paths   : 0
+
+Type           : Clock Setup: 'HALT'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 112.42 MHz ( period = 8.895 ns )
+From           : R0-R4:inst30|R_8E:inst|inst15
+To             : R_8E:inst8|inst15
+From Clock     : HALT
+To Clock       : HALT
+Failed Paths   : 0
+
+Type           : Clock Setup: 'cp0'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 161.06 MHz ( period = 6.209 ns )
+From           : R0-R4:inst30|R_8E:inst|inst
+To             : inst17
+From Clock     : cp0
+To Clock       : cp0
+Failed Paths   : 0
+
+Type           : Clock Setup: 'cp2'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 242.25 MHz ( period = 4.128 ns )
+From           : R0-R4:inst30|R_8E:inst|inst
+To             : inst17
+From Clock     : cp2
+To Clock       : cp2
+Failed Paths   : 0
+
+Type           : Clock Setup: 'cp1'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 253.04 MHz ( period = 3.952 ns )
+From           : R0-R4:inst30|R_8E:inst|inst
+To             : inst17
+From Clock     : cp1
+To Clock       : cp1
+Failed Paths   : 0
+
+Type           : Clock Setup: 'CPZZ'
+Slack          : N/A
+Required Time  : None
+Actual Time    : Restricted to 360.10 MHz ( period = 2.777 ns )
+From           : move8:inst14|move1:inst25|inst
+To             : move8:inst14|move1:inst24|inst
+From Clock     : CPZZ
+To Clock       : CPZZ
+Failed Paths   : 0
+
+Type           : Clock Hold: 'cp1'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : R_8E:inst21|inst6
+To             : inst17
+From Clock     : cp1
+To Clock       : cp1
+Failed Paths   : 4
+
+Type           : Clock Hold: 'cp2'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : R_8E:inst21|inst6
+To             : inst17
+From Clock     : cp2
+To Clock       : cp2
+Failed Paths   : 4
+
+Type           : Clock Hold: 'HALT'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : R_8E:inst21|inst15
+To             : eightAdd:inst34|count_2:inst|inst11
+From Clock     : HALT
+To Clock       : HALT
+Failed Paths   : 15
+
+Type           : Clock Hold: 'EN2'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : R_8E:inst21|inst15
+To             : eightAdd:inst34|count_2:inst|inst11
+From Clock     : EN2
+To Clock       : EN2
+Failed Paths   : 15
+
+Type           : Clock Hold: 'EN0'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : R_8E:inst21|inst15
+To             : eightAdd:inst34|count_2:inst|inst11
+From Clock     : EN0
+To Clock       : EN0
+Failed Paths   : 16
+
+Type           : Clock Hold: 'EN1'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : R_8E:inst21|inst15
+To             : eightAdd:inst34|count_2:inst|inst11
+From Clock     : EN1
+To Clock       : EN1
+Failed Paths   : 15
+
+Type           : Clock Hold: 'CK_C'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : R_8E:inst21|inst15
+To             : eightAdd:inst34|count_2:inst|inst11
+From Clock     : CK_C
+To Clock       : CK_C
+Failed Paths   : 15
+
+Type           : Clock Hold: 'P'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : R_8E:inst21|inst15
+To             : eightAdd:inst34|count_2:inst|inst11
+From Clock     : P
+To Clock       : P
+Failed Paths   : 15
+
+Type           : Clock Hold: 'cp0'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : R_8E:inst21|inst6
+To             : inst17
+From Clock     : cp0
+To Clock       : cp0
+Failed Paths   : 2
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 101
+
+--------------------------------------------------------------------------------------
+

@@ -1,0 +1,170 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2009 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II
+# Version 9.0 Build 132 02/25/2009 SJ Full Version
+# Date created = 11:41:42  April 13, 2022
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		simpleMachine_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone II"
+set_global_assignment -name DEVICE EP2C8Q208C8
+set_global_assignment -name TOP_LEVEL_ENTITY simpleMachine
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 9.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "11:41:42  APRIL 13, 2022"
+set_global_assignment -name LAST_QUARTUS_VERSION "9.0 SP2"
+set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id eda_blast_fpga
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
+set_global_assignment -name MISC_FILE "E:/quTotal/simpleMachine.dpf"
+set_global_assignment -name SIMULATION_MODE FUNCTIONAL
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE simpleMachine.vwf
+set_global_assignment -name BDF_FILE ALU.bdf
+set_global_assignment -name BDF_FILE move1.bdf
+set_global_assignment -name BDF_FILE move8.bdf
+set_global_assignment -name BDF_FILE R_8E.bdf
+set_global_assignment -name BDF_FILE start.bdf
+set_global_assignment -name BDF_FILE 38decoder.bdf
+set_global_assignment -name BDF_FILE 24decoder.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE t1.vwf
+set_global_assignment -name BDF_FILE simpleMachine.bdf
+set_global_assignment -name BDF_FILE tAlu.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE simpleMachine.vwf
+set_global_assignment -name BDF_FILE cALU.bdf
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name BDF_FILE addressOFJXT.bdf
+set_global_assignment -name BDF_FILE temp0.bdf
+set_location_assignment PIN_89 -to ADR0
+set_location_assignment PIN_90 -to ADR1
+set_location_assignment PIN_92 -to ADR2
+set_location_assignment PIN_94 -to cp0
+set_location_assignment PIN_95 -to cp1
+set_location_assignment PIN_96 -to cp2
+set_location_assignment PIN_97 -to EN0
+set_location_assignment PIN_99 -to EN1
+set_location_assignment PIN_101 -to EN2
+set_location_assignment PIN_102 -to CPZZ
+set_location_assignment PIN_103 -to CPBB
+set_location_assignment PIN_104 -to CPAA
+set_location_assignment PIN_105 -to USEQN
+set_location_assignment PIN_106 -to LRM
+set_location_assignment PIN_108 -to MDRCY
+set_location_assignment PIN_110 -to MW
+set_location_assignment PIN_112 -to MR
+set_location_assignment PIN_113 -to PBY
+set_location_assignment PIN_114 -to RBY
+set_location_assignment PIN_115 -to RAY
+set_location_assignment PIN_116 -to MAY
+set_location_assignment PIN_61 -to CPuIR
+set_global_assignment -name USE_CONFIGURATION_DEVICE ON
+set_global_assignment -name CYCLONEII_RESERVE_NCEO_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_global_assignment -name RESERVE_ASDO_AFTER_CONFIGURATION "AS INPUT TRI-STATED"
+set_location_assignment PIN_63 -to MRO
+set_location_assignment PIN_64 -to MWO
+set_location_assignment PIN_60 -to UR
+set_location_assignment PIN_168 -to MAR[0]
+set_location_assignment PIN_169 -to MAR[1]
+set_location_assignment PIN_170 -to MAR[2]
+set_location_assignment PIN_171 -to MAR[3]
+set_location_assignment PIN_173 -to MAR[4]
+set_location_assignment PIN_175 -to MAR[5]
+set_location_assignment PIN_176 -to MAR[6]
+set_location_assignment PIN_179 -to MAR[7]
+set_location_assignment PIN_192 -to MDR[0]
+set_location_assignment PIN_193 -to MDR[1]
+set_location_assignment PIN_195 -to MDR[2]
+set_location_assignment PIN_197 -to MDR[3]
+set_location_assignment PIN_198 -to MDR[4]
+set_location_assignment PIN_199 -to MDR[5]
+set_location_assignment PIN_200 -to MDR[6]
+set_location_assignment PIN_201 -to MDR[7]
+set_location_assignment PIN_180 -to uMAR0
+set_location_assignment PIN_181 -to uMAR1
+set_location_assignment PIN_182 -to uMAR2
+set_location_assignment PIN_185 -to uMAR3
+set_location_assignment PIN_187 -to uMAR4
+set_location_assignment PIN_188 -to uMAR5
+set_location_assignment PIN_189 -to uMAR6
+set_location_assignment PIN_191 -to uMAR7
+set_location_assignment PIN_142 -to Q0
+set_location_assignment PIN_143 -to Q1
+set_location_assignment PIN_144 -to Q2
+set_location_assignment PIN_145 -to Q3
+set_location_assignment PIN_146 -to Q4
+set_location_assignment PIN_147 -to Q5
+set_location_assignment PIN_149 -to Q6
+set_location_assignment PIN_150 -to Q7
+set_location_assignment PIN_151 -to PB[0]
+set_location_assignment PIN_152 -to PB[1]
+set_location_assignment PIN_160 -to PB[2]
+set_location_assignment PIN_161 -to PB[3]
+set_location_assignment PIN_162 -to PB[4]
+set_location_assignment PIN_163 -to PB[5]
+set_location_assignment PIN_164 -to PB[6]
+set_location_assignment PIN_165 -to PB[7]
+set_location_assignment PIN_128 -to Q[0]
+set_location_assignment PIN_133 -to Q[1]
+set_location_assignment PIN_134 -to Q[2]
+set_location_assignment PIN_135 -to Q[3]
+set_location_assignment PIN_137 -to Q[4]
+set_location_assignment PIN_138 -to Q[5]
+set_location_assignment PIN_139 -to Q[6]
+set_location_assignment PIN_141 -to Q[7]
+set_location_assignment PIN_33 -to RA[7]
+set_location_assignment PIN_31 -to RA[6]
+set_location_assignment PIN_30 -to RA[5]
+set_location_assignment PIN_15 -to RA[4]
+set_location_assignment PIN_14 -to RA[3]
+set_location_assignment PIN_13 -to RA[2]
+set_location_assignment PIN_12 -to RA[1]
+set_location_assignment PIN_11 -to RA[0]
+set_global_assignment -name MISC_FILE "C:/Users/dell/Desktop/quTotal4/quTotal/simpleMachine.dpf"
+set_location_assignment PIN_44 -to MA[7]
+set_location_assignment PIN_43 -to MA[6]
+set_location_assignment PIN_41 -to MA[5]
+set_location_assignment PIN_40 -to MA[4]
+set_location_assignment PIN_39 -to MA[3]
+set_location_assignment PIN_37 -to MA[2]
+set_location_assignment PIN_35 -to MA[1]
+set_location_assignment PIN_34 -to MA[0]
+set_location_assignment PIN_10 -to tesC
+set_location_assignment PIN_8 -to tesC31
+set_location_assignment PIN_6 -to test2
+set_location_assignment PIN_131 -to CK_C
+set_location_assignment PIN_107 -to CLRT
+set_location_assignment PIN_130 -to HALT
+set_location_assignment PIN_132 -to P

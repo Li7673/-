@@ -1,0 +1,107 @@
+(pc)->B		          RB=0 PB=1 	cpB RA,MA=0 cpA					                      001
+B->Z 	          	          CI=0 ZDR=0 cpZ                       	      	                     			   001	  									      001
+Z->MAR	          	cpMAR      							                      001
+MR,(MDR)         	cpMDR  MR=0 MW=1 MDREN=0  MDRCY=0				                      001
+(MDR)->A        	 MA=1 RA=0 PB,RB=0 cpA ,cpB						      001
+A->ALU->Z	ALU:S=1001 ALU:C0=0 ALU:M=0 Z:DM=1 Z:RM=0 cpZ    	      			      001
+Z->IR                	cpIR	      							                      001
+pc+1                 	cppc   PCLD=1								      010  //010 是QJP
+00H
+LD:
+(pc)->B->ALU         RB=0 PB=1 	cpB RA,MA=0 cpA					                      001
+ALU->Z 	          	ALU:S=1001 ALU:C0=0 ALU:M=0 Z:DM=1 Z:RM=0 cpZ                       	      	                      001	  									      001
+Z->MAR	                cpMAR      							                      001
+MR,(MDR)               cpMDR  MR=0 MW=1 MDREN=0  MDRCY=0					      001  							     
+(MDR)->A              MA=1 RA=0 PB,RB=0  cpA cpB    	       					     001
+A->Z		ALU:S=1001 ALU:C0=0 ALU:M=0 Z:DM=1 Z:RM=0 cpZ
+Z->RI	               cpR 									      001
+pc+1                      cppc   PCLD=1								      011 //JP 
+10H
+STA:
+(pc)->B->ALU         RB=0 PB=1 	cpB RA,MA=0 cpA					                      001
+ALU->Z 	          	ALU:S=1001 ALU:C0=0 ALU:M=0 Z:DM=1 Z:RM=0 cpZ                       	      	                      001	  									      001
+Z->MAR	                cpMAR      							                      001
+Ri->A		cpA cpB RA=1,MA=0 RB,PB=0						      001
+A->Z		ALU:S=1001 ALU:C0=0 ALU:M=0 Z:DM=1 Z:RM=0 cpZ				      001
+Z->MDR  	 cpMDR MDREN=0 MDRCY=1						      001
+MW                        MR=1 MW=0								      001
+pc+1                      	cppc   PCLD=1								      011 //JP
+20H
+ADD Rj Ri:
+Ri->B Rj->A            RB=0 PB=1 	cpB RA,MA=0 cpA
+A->pzw		ALU:S=1001 ALU:C0=0 ALU:M=0 Z:DM=1 Z:RM=0 cpPSW
+A->Z		ALU:S=1001 ALU:C0=0 ALU:M=0 Z:DM=1 Z:RM=0 cpZ				     001
+Z->Rj		cpR									     011
+30H
+
+JX:		
+(pc)->B->ALU         RB=0 PB=1 	cpB RA,MA=0 cpA					                      001
+ALU->Z 	          	ALU:S=1001 ALU:C0=0 ALU:M=0 Z:DM=1 Z:RM=0 cpZ                       	      	                      001	  									      001
+Z->MAR	                cpMAR      							                      001
+MR,(MDR)               cpMDR  MR=0 MW=1 MDREN=0  MDRCY=0					      001 
+pc+1                      cppc   PCLD=1								      100 //JX
+
+(MDR)->A,pc->B              MA=1 RA=0 PB=1 RB=0  cpA cpB    	       			                      001	  45H 	
+A,B->Z		ALU:S=1001 ALU:C0=0 ALU:M=0 Z:DM=1 Z:RM=0 cpZ				      001
+Z->PC                    cppc pcLD=0								      011
+40H
+//就是将Ri寄存器地址作为要存数的地址，第二个字节是数据来源的地址
+STD：2字节 STD Ri(间接寻址)（间接寻址到的数）（要将LD 到一个寄存器里）
+(pc)->B->ALU         RB=0 PB=1 	cpB RA,MA=0 cpA					                      001
+ALU->Z 	          	ALU:S=1001 ALU:C0=0 ALU:M=0 Z:DM=1 Z:RM=0 cpZ                       	      	                      001	  									      001
+Z->MAR	                cpMAR      							                      001
+MR,(MDR)               cpMDR  MR=0 MW=1 MDREN=0  MDRCY=0					      001  							     
+Ri->A		cpA cpB RA=1,MA=0 RB,PB=0						      001
+A->Z		ALU:S=1001 ALU:C0=0 ALU:M=0 Z:DM=1 Z:RM=0 cpZ				      001
+Z->MAR	                cpMAR      							                      001
+MW                        MR=1 MW=0								      001
+要不要关MW？
+pc+1                      	cppc   PCLD=1								      011
+50H
+JMP:
+ (pc)->B->ALU         RB=0 PB=1 	cpB RA,MA=0 cpA					                      001
+ALU->Z 	          	ALU:S=1001 ALU:C0=0 ALU:M=0 Z:DM=1 Z:RM=0 cpZ                       	      	                      001	  									      001
+Z->MAR	                cpMAR      							                      001
+MR,(MDR)               cpMDR  MR=0 MW=1 MDREN=0  MDRCY=0					      001  							     
+(MDR)->A              MA=1 RA=0 PB,RB=0  cpA cpB    	       					      001
+A->Z		ALU:S=1001 ALU:C0=0 ALU:M=0 Z:DM=1 Z:RM=0 cpZ				      001
+Z->PC                    cppc pcLD=0								      011
+60H
+SUB1:
+Ri->A		cpA cpB RA=1,MA=0 RB,PB=0						      001
+-1 		cpPSW  									      001
+A->Z		CI=1 cppZ								      001
+Z->Ri		cpR									      011
+70H
+乘法重复部分做四条指令
+Qn判断：
+Rn->isM		cpQn									     011
+80H
+ADD2:
+Ri->B Rj->A            RB=0 PB=1  useQn=1	cpB RA,MA=0 cpA					     001
+A->pzw		ALU:S=1001 ALU:C0=0 ALU:M=0 Z:DM=1 Z:RM=0 cpPSW				     001
+A->Z		ALU:S=1001 ALU:C0=0 ALU:M=0 Z:DM=1 Z:RM=0 cpZ				     001
+Z->Rj		cpR									     011
+90H
+MMR1：高八位右移
+ Ri->A		cpA cpB RA=1,MA=0 RB,PB=0						      001
+ A->Z RM 	ZDR=1   cpZ CI=0	cpPZW						                     001
+Z->Ri		cpR									     011
+A0H
+MMR2：低八位右移
+ Ri->A		cpA cpB RA=1,MA=0 RB,PB=0						      001
+ A>Z RM 	ZDR=1     cpZ CI=0	LRM=1						                     	      001
+Z->Ri		cpR									      011
+B0H   
+
+
+HALT:
+		HALT=1
+C0H
+
+
+
+
+
+
+ 	

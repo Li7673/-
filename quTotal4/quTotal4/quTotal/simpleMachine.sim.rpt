@@ -1,0 +1,380 @@
+Simulator report for simpleMachine
+Mon Apr 25 21:15:14 2022
+Quartus II Version 9.0 Build 132 02/25/2009 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 110 nodes    ;
+; Simulation Coverage         ;       0.00 % ;
+; Total Number of Transitions ; 0            ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                             ;
++--------------------------------------------------------------------------------------------+-------------------+---------------+
+; Option                                                                                     ; Setting           ; Default Value ;
++--------------------------------------------------------------------------------------------+-------------------+---------------+
+; Simulation mode                                                                            ; Functional        ; Timing        ;
+; Start time                                                                                 ; 0 ns              ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF              ;               ;
+; Vector input source                                                                        ; simpleMachine.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                ; On            ;
+; Check outputs                                                                              ; Off               ; Off           ;
+; Report simulation coverage                                                                 ; On                ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                ; On            ;
+; Display missing 1-value coverage report                                                    ; On                ; On            ;
+; Display missing 0-value coverage report                                                    ; On                ; On            ;
+; Detect setup and hold time violations                                                      ; Off               ; Off           ;
+; Detect glitches                                                                            ; Off               ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off               ; Off           ;
+; Generate Signal Activity File                                                              ; Off               ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off               ; Off           ;
+; Group bus channels in simulation results                                                   ; Off               ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE        ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off               ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off               ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto              ; Auto          ;
++--------------------------------------------------------------------------------------------+-------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;       0.00 % ;
+; Total nodes checked                                 ; 110          ;
+; Total output ports checked                          ; 110          ;
+; Total output ports with complete 1/0-value coverage ; 0            ;
+; Total output ports with no 1/0-value coverage       ; 110          ;
+; Total output ports with no 1-value coverage         ; 110          ;
+; Total output ports with no 0-value coverage         ; 110          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++-------------------------------------------------+
+; Complete 1/0-Value Coverage                     ;
++-----------+------------------+------------------+
+; Node Name ; Output Port Name ; Output Port Type ;
++-----------+------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++----------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                         ;
++-------------------------------+-------------------------------+------------------+
+; Node Name                     ; Output Port Name              ; Output Port Type ;
++-------------------------------+-------------------------------+------------------+
+; |tAlu|Y0                      ; |tAlu|Y0                      ; pin_out          ;
+; |tAlu|M                       ; |tAlu|M                       ; out              ;
+; |tAlu|A0                      ; |tAlu|A0                      ; out              ;
+; |tAlu|A1                      ; |tAlu|A1                      ; out              ;
+; |tAlu|A2                      ; |tAlu|A2                      ; out              ;
+; |tAlu|A3                      ; |tAlu|A3                      ; out              ;
+; |tAlu|A4                      ; |tAlu|A4                      ; out              ;
+; |tAlu|A5                      ; |tAlu|A5                      ; out              ;
+; |tAlu|A6                      ; |tAlu|A6                      ; out              ;
+; |tAlu|A7                      ; |tAlu|A7                      ; out              ;
+; |tAlu|B0                      ; |tAlu|B0                      ; out              ;
+; |tAlu|B1                      ; |tAlu|B1                      ; out              ;
+; |tAlu|B2                      ; |tAlu|B2                      ; out              ;
+; |tAlu|B3                      ; |tAlu|B3                      ; out              ;
+; |tAlu|B4                      ; |tAlu|B4                      ; out              ;
+; |tAlu|B5                      ; |tAlu|B5                      ; out              ;
+; |tAlu|B6                      ; |tAlu|B6                      ; out              ;
+; |tAlu|B7                      ; |tAlu|B7                      ; out              ;
+; |tAlu|Y1                      ; |tAlu|Y1                      ; pin_out          ;
+; |tAlu|Y2                      ; |tAlu|Y2                      ; pin_out          ;
+; |tAlu|Y3                      ; |tAlu|Y3                      ; pin_out          ;
+; |tAlu|Y4                      ; |tAlu|Y4                      ; pin_out          ;
+; |tAlu|Y5                      ; |tAlu|Y5                      ; pin_out          ;
+; |tAlu|Y6                      ; |tAlu|Y6                      ; pin_out          ;
+; |tAlu|Y7                      ; |tAlu|Y7                      ; pin_out          ;
+; |tAlu|L0                      ; |tAlu|L0                      ; pin_out          ;
+; |tAlu|ALU:inst|74182:inst6|23 ; |tAlu|ALU:inst|74182:inst6|23 ; out0             ;
+; |tAlu|ALU:inst|74181:inst3|81 ; |tAlu|ALU:inst|74181:inst3|81 ; out0             ;
+; |tAlu|ALU:inst|74181:inst3|54 ; |tAlu|ALU:inst|74181:inst3|54 ; out0             ;
+; |tAlu|ALU:inst|74181:inst3|47 ; |tAlu|ALU:inst|74181:inst3|47 ; out0             ;
+; |tAlu|ALU:inst|74181:inst3|14 ; |tAlu|ALU:inst|74181:inst3|14 ; out0             ;
+; |tAlu|ALU:inst|74181:inst3|13 ; |tAlu|ALU:inst|74181:inst3|13 ; out0             ;
+; |tAlu|ALU:inst|74181:inst3|44 ; |tAlu|ALU:inst|74181:inst3|44 ; out0             ;
+; |tAlu|ALU:inst|74181:inst3|12 ; |tAlu|ALU:inst|74181:inst3|12 ; out0             ;
+; |tAlu|ALU:inst|74181:inst3|79 ; |tAlu|ALU:inst|74181:inst3|79 ; out0             ;
+; |tAlu|ALU:inst|74181:inst3|66 ; |tAlu|ALU:inst|74181:inst3|66 ; out0             ;
+; |tAlu|ALU:inst|74181:inst3|46 ; |tAlu|ALU:inst|74181:inst3|46 ; out0             ;
+; |tAlu|ALU:inst|74181:inst3|9  ; |tAlu|ALU:inst|74181:inst3|9  ; out0             ;
+; |tAlu|ALU:inst|74181:inst3|8  ; |tAlu|ALU:inst|74181:inst3|8  ; out0             ;
+; |tAlu|ALU:inst|74181:inst3|43 ; |tAlu|ALU:inst|74181:inst3|43 ; out0             ;
+; |tAlu|ALU:inst|74181:inst3|7  ; |tAlu|ALU:inst|74181:inst3|7  ; out0             ;
+; |tAlu|ALU:inst|74181:inst3|77 ; |tAlu|ALU:inst|74181:inst3|77 ; out0             ;
+; |tAlu|ALU:inst|74181:inst3|56 ; |tAlu|ALU:inst|74181:inst3|56 ; out0             ;
+; |tAlu|ALU:inst|74181:inst3|52 ; |tAlu|ALU:inst|74181:inst3|52 ; out0             ;
+; |tAlu|ALU:inst|74181:inst3|24 ; |tAlu|ALU:inst|74181:inst3|24 ; out0             ;
+; |tAlu|ALU:inst|74181:inst3|23 ; |tAlu|ALU:inst|74181:inst3|23 ; out0             ;
+; |tAlu|ALU:inst|74181:inst3|51 ; |tAlu|ALU:inst|74181:inst3|51 ; out0             ;
+; |tAlu|ALU:inst|74181:inst3|22 ; |tAlu|ALU:inst|74181:inst3|22 ; out0             ;
+; |tAlu|ALU:inst|74181:inst3|74 ; |tAlu|ALU:inst|74181:inst3|74 ; out0             ;
+; |tAlu|ALU:inst|74181:inst3|73 ; |tAlu|ALU:inst|74181:inst3|73 ; out0             ;
+; |tAlu|ALU:inst|74181:inst3|48 ; |tAlu|ALU:inst|74181:inst3|48 ; out0             ;
+; |tAlu|ALU:inst|74181:inst3|19 ; |tAlu|ALU:inst|74181:inst3|19 ; out0             ;
+; |tAlu|ALU:inst|74181:inst3|18 ; |tAlu|ALU:inst|74181:inst3|18 ; out0             ;
+; |tAlu|ALU:inst|74181:inst3|72 ; |tAlu|ALU:inst|74181:inst3|72 ; out0             ;
+; |tAlu|ALU:inst|74181:inst3|71 ; |tAlu|ALU:inst|74181:inst3|71 ; out0             ;
+; |tAlu|ALU:inst|74181:inst3|45 ; |tAlu|ALU:inst|74181:inst3|45 ; out0             ;
+; |tAlu|ALU:inst|74181:inst3|17 ; |tAlu|ALU:inst|74181:inst3|17 ; out0             ;
+; |tAlu|ALU:inst|74181:inst3|82 ; |tAlu|ALU:inst|74181:inst3|82 ; out0             ;
+; |tAlu|ALU:inst|74181:inst3|55 ; |tAlu|ALU:inst|74181:inst3|55 ; out0             ;
+; |tAlu|ALU:inst|74181:inst3|75 ; |tAlu|ALU:inst|74181:inst3|75 ; out0             ;
+; |tAlu|ALU:inst|74181:inst3|68 ; |tAlu|ALU:inst|74181:inst3|68 ; out0             ;
+; |tAlu|ALU:inst|74181:inst3|69 ; |tAlu|ALU:inst|74181:inst3|69 ; out0             ;
+; |tAlu|ALU:inst|74181:inst3|80 ; |tAlu|ALU:inst|74181:inst3|80 ; out0             ;
+; |tAlu|ALU:inst|74181:inst3|53 ; |tAlu|ALU:inst|74181:inst3|53 ; out0             ;
+; |tAlu|ALU:inst|74181:inst3|78 ; |tAlu|ALU:inst|74181:inst3|78 ; out0             ;
+; |tAlu|ALU:inst|74181:inst3|63 ; |tAlu|ALU:inst|74181:inst3|63 ; out0             ;
+; |tAlu|ALU:inst|74181:inst3|58 ; |tAlu|ALU:inst|74181:inst3|58 ; out0             ;
+; |tAlu|ALU:inst|74181:inst3|59 ; |tAlu|ALU:inst|74181:inst3|59 ; out0             ;
+; |tAlu|ALU:inst|74181:inst3|62 ; |tAlu|ALU:inst|74181:inst3|62 ; out0             ;
+; |tAlu|ALU:inst|74181:inst3|61 ; |tAlu|ALU:inst|74181:inst3|61 ; out0             ;
+; |tAlu|ALU:inst|74181:inst|81  ; |tAlu|ALU:inst|74181:inst|81  ; out0             ;
+; |tAlu|ALU:inst|74181:inst|54  ; |tAlu|ALU:inst|74181:inst|54  ; out0             ;
+; |tAlu|ALU:inst|74181:inst|47  ; |tAlu|ALU:inst|74181:inst|47  ; out0             ;
+; |tAlu|ALU:inst|74181:inst|14  ; |tAlu|ALU:inst|74181:inst|14  ; out0             ;
+; |tAlu|ALU:inst|74181:inst|13  ; |tAlu|ALU:inst|74181:inst|13  ; out0             ;
+; |tAlu|ALU:inst|74181:inst|44  ; |tAlu|ALU:inst|74181:inst|44  ; out0             ;
+; |tAlu|ALU:inst|74181:inst|12  ; |tAlu|ALU:inst|74181:inst|12  ; out0             ;
+; |tAlu|ALU:inst|74181:inst|79  ; |tAlu|ALU:inst|74181:inst|79  ; out0             ;
+; |tAlu|ALU:inst|74181:inst|46  ; |tAlu|ALU:inst|74181:inst|46  ; out0             ;
+; |tAlu|ALU:inst|74181:inst|9   ; |tAlu|ALU:inst|74181:inst|9   ; out0             ;
+; |tAlu|ALU:inst|74181:inst|8   ; |tAlu|ALU:inst|74181:inst|8   ; out0             ;
+; |tAlu|ALU:inst|74181:inst|43  ; |tAlu|ALU:inst|74181:inst|43  ; out0             ;
+; |tAlu|ALU:inst|74181:inst|7   ; |tAlu|ALU:inst|74181:inst|7   ; out0             ;
+; |tAlu|ALU:inst|74181:inst|77  ; |tAlu|ALU:inst|74181:inst|77  ; out0             ;
+; |tAlu|ALU:inst|74181:inst|56  ; |tAlu|ALU:inst|74181:inst|56  ; out0             ;
+; |tAlu|ALU:inst|74181:inst|52  ; |tAlu|ALU:inst|74181:inst|52  ; out0             ;
+; |tAlu|ALU:inst|74181:inst|24  ; |tAlu|ALU:inst|74181:inst|24  ; out0             ;
+; |tAlu|ALU:inst|74181:inst|23  ; |tAlu|ALU:inst|74181:inst|23  ; out0             ;
+; |tAlu|ALU:inst|74181:inst|51  ; |tAlu|ALU:inst|74181:inst|51  ; out0             ;
+; |tAlu|ALU:inst|74181:inst|22  ; |tAlu|ALU:inst|74181:inst|22  ; out0             ;
+; |tAlu|ALU:inst|74181:inst|74  ; |tAlu|ALU:inst|74181:inst|74  ; out0             ;
+; |tAlu|ALU:inst|74181:inst|73  ; |tAlu|ALU:inst|74181:inst|73  ; out0             ;
+; |tAlu|ALU:inst|74181:inst|48  ; |tAlu|ALU:inst|74181:inst|48  ; out0             ;
+; |tAlu|ALU:inst|74181:inst|19  ; |tAlu|ALU:inst|74181:inst|19  ; out0             ;
+; |tAlu|ALU:inst|74181:inst|18  ; |tAlu|ALU:inst|74181:inst|18  ; out0             ;
+; |tAlu|ALU:inst|74181:inst|72  ; |tAlu|ALU:inst|74181:inst|72  ; out0             ;
+; |tAlu|ALU:inst|74181:inst|71  ; |tAlu|ALU:inst|74181:inst|71  ; out0             ;
+; |tAlu|ALU:inst|74181:inst|45  ; |tAlu|ALU:inst|74181:inst|45  ; out0             ;
+; |tAlu|ALU:inst|74181:inst|17  ; |tAlu|ALU:inst|74181:inst|17  ; out0             ;
+; |tAlu|ALU:inst|74181:inst|82  ; |tAlu|ALU:inst|74181:inst|82  ; out0             ;
+; |tAlu|ALU:inst|74181:inst|55  ; |tAlu|ALU:inst|74181:inst|55  ; out0             ;
+; |tAlu|ALU:inst|74181:inst|75  ; |tAlu|ALU:inst|74181:inst|75  ; out0             ;
+; |tAlu|ALU:inst|74181:inst|68  ; |tAlu|ALU:inst|74181:inst|68  ; out0             ;
+; |tAlu|ALU:inst|74181:inst|69  ; |tAlu|ALU:inst|74181:inst|69  ; out0             ;
+; |tAlu|ALU:inst|74181:inst|53  ; |tAlu|ALU:inst|74181:inst|53  ; out0             ;
+; |tAlu|ALU:inst|74181:inst|60  ; |tAlu|ALU:inst|74181:inst|60  ; out0             ;
+; |tAlu|ALU:inst|74181:inst|63  ; |tAlu|ALU:inst|74181:inst|63  ; out0             ;
+; |tAlu|ALU:inst|74181:inst|58  ; |tAlu|ALU:inst|74181:inst|58  ; out0             ;
+; |tAlu|ALU:inst|74181:inst|59  ; |tAlu|ALU:inst|74181:inst|59  ; out0             ;
+; |tAlu|ALU:inst|74181:inst|62  ; |tAlu|ALU:inst|74181:inst|62  ; out0             ;
++-------------------------------+-------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                         ;
++-------------------------------+-------------------------------+------------------+
+; Node Name                     ; Output Port Name              ; Output Port Type ;
++-------------------------------+-------------------------------+------------------+
+; |tAlu|Y0                      ; |tAlu|Y0                      ; pin_out          ;
+; |tAlu|M                       ; |tAlu|M                       ; out              ;
+; |tAlu|A0                      ; |tAlu|A0                      ; out              ;
+; |tAlu|A1                      ; |tAlu|A1                      ; out              ;
+; |tAlu|A2                      ; |tAlu|A2                      ; out              ;
+; |tAlu|A3                      ; |tAlu|A3                      ; out              ;
+; |tAlu|A4                      ; |tAlu|A4                      ; out              ;
+; |tAlu|A5                      ; |tAlu|A5                      ; out              ;
+; |tAlu|A6                      ; |tAlu|A6                      ; out              ;
+; |tAlu|A7                      ; |tAlu|A7                      ; out              ;
+; |tAlu|B0                      ; |tAlu|B0                      ; out              ;
+; |tAlu|B1                      ; |tAlu|B1                      ; out              ;
+; |tAlu|B2                      ; |tAlu|B2                      ; out              ;
+; |tAlu|B3                      ; |tAlu|B3                      ; out              ;
+; |tAlu|B4                      ; |tAlu|B4                      ; out              ;
+; |tAlu|B5                      ; |tAlu|B5                      ; out              ;
+; |tAlu|B6                      ; |tAlu|B6                      ; out              ;
+; |tAlu|B7                      ; |tAlu|B7                      ; out              ;
+; |tAlu|Y1                      ; |tAlu|Y1                      ; pin_out          ;
+; |tAlu|Y2                      ; |tAlu|Y2                      ; pin_out          ;
+; |tAlu|Y3                      ; |tAlu|Y3                      ; pin_out          ;
+; |tAlu|Y4                      ; |tAlu|Y4                      ; pin_out          ;
+; |tAlu|Y5                      ; |tAlu|Y5                      ; pin_out          ;
+; |tAlu|Y6                      ; |tAlu|Y6                      ; pin_out          ;
+; |tAlu|Y7                      ; |tAlu|Y7                      ; pin_out          ;
+; |tAlu|L0                      ; |tAlu|L0                      ; pin_out          ;
+; |tAlu|ALU:inst|74182:inst6|23 ; |tAlu|ALU:inst|74182:inst6|23 ; out0             ;
+; |tAlu|ALU:inst|74181:inst3|81 ; |tAlu|ALU:inst|74181:inst3|81 ; out0             ;
+; |tAlu|ALU:inst|74181:inst3|54 ; |tAlu|ALU:inst|74181:inst3|54 ; out0             ;
+; |tAlu|ALU:inst|74181:inst3|47 ; |tAlu|ALU:inst|74181:inst3|47 ; out0             ;
+; |tAlu|ALU:inst|74181:inst3|14 ; |tAlu|ALU:inst|74181:inst3|14 ; out0             ;
+; |tAlu|ALU:inst|74181:inst3|13 ; |tAlu|ALU:inst|74181:inst3|13 ; out0             ;
+; |tAlu|ALU:inst|74181:inst3|44 ; |tAlu|ALU:inst|74181:inst3|44 ; out0             ;
+; |tAlu|ALU:inst|74181:inst3|12 ; |tAlu|ALU:inst|74181:inst3|12 ; out0             ;
+; |tAlu|ALU:inst|74181:inst3|79 ; |tAlu|ALU:inst|74181:inst3|79 ; out0             ;
+; |tAlu|ALU:inst|74181:inst3|66 ; |tAlu|ALU:inst|74181:inst3|66 ; out0             ;
+; |tAlu|ALU:inst|74181:inst3|46 ; |tAlu|ALU:inst|74181:inst3|46 ; out0             ;
+; |tAlu|ALU:inst|74181:inst3|9  ; |tAlu|ALU:inst|74181:inst3|9  ; out0             ;
+; |tAlu|ALU:inst|74181:inst3|8  ; |tAlu|ALU:inst|74181:inst3|8  ; out0             ;
+; |tAlu|ALU:inst|74181:inst3|43 ; |tAlu|ALU:inst|74181:inst3|43 ; out0             ;
+; |tAlu|ALU:inst|74181:inst3|7  ; |tAlu|ALU:inst|74181:inst3|7  ; out0             ;
+; |tAlu|ALU:inst|74181:inst3|77 ; |tAlu|ALU:inst|74181:inst3|77 ; out0             ;
+; |tAlu|ALU:inst|74181:inst3|56 ; |tAlu|ALU:inst|74181:inst3|56 ; out0             ;
+; |tAlu|ALU:inst|74181:inst3|52 ; |tAlu|ALU:inst|74181:inst3|52 ; out0             ;
+; |tAlu|ALU:inst|74181:inst3|24 ; |tAlu|ALU:inst|74181:inst3|24 ; out0             ;
+; |tAlu|ALU:inst|74181:inst3|23 ; |tAlu|ALU:inst|74181:inst3|23 ; out0             ;
+; |tAlu|ALU:inst|74181:inst3|51 ; |tAlu|ALU:inst|74181:inst3|51 ; out0             ;
+; |tAlu|ALU:inst|74181:inst3|22 ; |tAlu|ALU:inst|74181:inst3|22 ; out0             ;
+; |tAlu|ALU:inst|74181:inst3|74 ; |tAlu|ALU:inst|74181:inst3|74 ; out0             ;
+; |tAlu|ALU:inst|74181:inst3|73 ; |tAlu|ALU:inst|74181:inst3|73 ; out0             ;
+; |tAlu|ALU:inst|74181:inst3|48 ; |tAlu|ALU:inst|74181:inst3|48 ; out0             ;
+; |tAlu|ALU:inst|74181:inst3|19 ; |tAlu|ALU:inst|74181:inst3|19 ; out0             ;
+; |tAlu|ALU:inst|74181:inst3|18 ; |tAlu|ALU:inst|74181:inst3|18 ; out0             ;
+; |tAlu|ALU:inst|74181:inst3|72 ; |tAlu|ALU:inst|74181:inst3|72 ; out0             ;
+; |tAlu|ALU:inst|74181:inst3|71 ; |tAlu|ALU:inst|74181:inst3|71 ; out0             ;
+; |tAlu|ALU:inst|74181:inst3|45 ; |tAlu|ALU:inst|74181:inst3|45 ; out0             ;
+; |tAlu|ALU:inst|74181:inst3|17 ; |tAlu|ALU:inst|74181:inst3|17 ; out0             ;
+; |tAlu|ALU:inst|74181:inst3|82 ; |tAlu|ALU:inst|74181:inst3|82 ; out0             ;
+; |tAlu|ALU:inst|74181:inst3|55 ; |tAlu|ALU:inst|74181:inst3|55 ; out0             ;
+; |tAlu|ALU:inst|74181:inst3|75 ; |tAlu|ALU:inst|74181:inst3|75 ; out0             ;
+; |tAlu|ALU:inst|74181:inst3|68 ; |tAlu|ALU:inst|74181:inst3|68 ; out0             ;
+; |tAlu|ALU:inst|74181:inst3|69 ; |tAlu|ALU:inst|74181:inst3|69 ; out0             ;
+; |tAlu|ALU:inst|74181:inst3|80 ; |tAlu|ALU:inst|74181:inst3|80 ; out0             ;
+; |tAlu|ALU:inst|74181:inst3|53 ; |tAlu|ALU:inst|74181:inst3|53 ; out0             ;
+; |tAlu|ALU:inst|74181:inst3|78 ; |tAlu|ALU:inst|74181:inst3|78 ; out0             ;
+; |tAlu|ALU:inst|74181:inst3|63 ; |tAlu|ALU:inst|74181:inst3|63 ; out0             ;
+; |tAlu|ALU:inst|74181:inst3|58 ; |tAlu|ALU:inst|74181:inst3|58 ; out0             ;
+; |tAlu|ALU:inst|74181:inst3|59 ; |tAlu|ALU:inst|74181:inst3|59 ; out0             ;
+; |tAlu|ALU:inst|74181:inst3|62 ; |tAlu|ALU:inst|74181:inst3|62 ; out0             ;
+; |tAlu|ALU:inst|74181:inst3|61 ; |tAlu|ALU:inst|74181:inst3|61 ; out0             ;
+; |tAlu|ALU:inst|74181:inst|81  ; |tAlu|ALU:inst|74181:inst|81  ; out0             ;
+; |tAlu|ALU:inst|74181:inst|54  ; |tAlu|ALU:inst|74181:inst|54  ; out0             ;
+; |tAlu|ALU:inst|74181:inst|47  ; |tAlu|ALU:inst|74181:inst|47  ; out0             ;
+; |tAlu|ALU:inst|74181:inst|14  ; |tAlu|ALU:inst|74181:inst|14  ; out0             ;
+; |tAlu|ALU:inst|74181:inst|13  ; |tAlu|ALU:inst|74181:inst|13  ; out0             ;
+; |tAlu|ALU:inst|74181:inst|44  ; |tAlu|ALU:inst|74181:inst|44  ; out0             ;
+; |tAlu|ALU:inst|74181:inst|12  ; |tAlu|ALU:inst|74181:inst|12  ; out0             ;
+; |tAlu|ALU:inst|74181:inst|79  ; |tAlu|ALU:inst|74181:inst|79  ; out0             ;
+; |tAlu|ALU:inst|74181:inst|46  ; |tAlu|ALU:inst|74181:inst|46  ; out0             ;
+; |tAlu|ALU:inst|74181:inst|9   ; |tAlu|ALU:inst|74181:inst|9   ; out0             ;
+; |tAlu|ALU:inst|74181:inst|8   ; |tAlu|ALU:inst|74181:inst|8   ; out0             ;
+; |tAlu|ALU:inst|74181:inst|43  ; |tAlu|ALU:inst|74181:inst|43  ; out0             ;
+; |tAlu|ALU:inst|74181:inst|7   ; |tAlu|ALU:inst|74181:inst|7   ; out0             ;
+; |tAlu|ALU:inst|74181:inst|77  ; |tAlu|ALU:inst|74181:inst|77  ; out0             ;
+; |tAlu|ALU:inst|74181:inst|56  ; |tAlu|ALU:inst|74181:inst|56  ; out0             ;
+; |tAlu|ALU:inst|74181:inst|52  ; |tAlu|ALU:inst|74181:inst|52  ; out0             ;
+; |tAlu|ALU:inst|74181:inst|24  ; |tAlu|ALU:inst|74181:inst|24  ; out0             ;
+; |tAlu|ALU:inst|74181:inst|23  ; |tAlu|ALU:inst|74181:inst|23  ; out0             ;
+; |tAlu|ALU:inst|74181:inst|51  ; |tAlu|ALU:inst|74181:inst|51  ; out0             ;
+; |tAlu|ALU:inst|74181:inst|22  ; |tAlu|ALU:inst|74181:inst|22  ; out0             ;
+; |tAlu|ALU:inst|74181:inst|74  ; |tAlu|ALU:inst|74181:inst|74  ; out0             ;
+; |tAlu|ALU:inst|74181:inst|73  ; |tAlu|ALU:inst|74181:inst|73  ; out0             ;
+; |tAlu|ALU:inst|74181:inst|48  ; |tAlu|ALU:inst|74181:inst|48  ; out0             ;
+; |tAlu|ALU:inst|74181:inst|19  ; |tAlu|ALU:inst|74181:inst|19  ; out0             ;
+; |tAlu|ALU:inst|74181:inst|18  ; |tAlu|ALU:inst|74181:inst|18  ; out0             ;
+; |tAlu|ALU:inst|74181:inst|72  ; |tAlu|ALU:inst|74181:inst|72  ; out0             ;
+; |tAlu|ALU:inst|74181:inst|71  ; |tAlu|ALU:inst|74181:inst|71  ; out0             ;
+; |tAlu|ALU:inst|74181:inst|45  ; |tAlu|ALU:inst|74181:inst|45  ; out0             ;
+; |tAlu|ALU:inst|74181:inst|17  ; |tAlu|ALU:inst|74181:inst|17  ; out0             ;
+; |tAlu|ALU:inst|74181:inst|82  ; |tAlu|ALU:inst|74181:inst|82  ; out0             ;
+; |tAlu|ALU:inst|74181:inst|55  ; |tAlu|ALU:inst|74181:inst|55  ; out0             ;
+; |tAlu|ALU:inst|74181:inst|75  ; |tAlu|ALU:inst|74181:inst|75  ; out0             ;
+; |tAlu|ALU:inst|74181:inst|68  ; |tAlu|ALU:inst|74181:inst|68  ; out0             ;
+; |tAlu|ALU:inst|74181:inst|69  ; |tAlu|ALU:inst|74181:inst|69  ; out0             ;
+; |tAlu|ALU:inst|74181:inst|53  ; |tAlu|ALU:inst|74181:inst|53  ; out0             ;
+; |tAlu|ALU:inst|74181:inst|60  ; |tAlu|ALU:inst|74181:inst|60  ; out0             ;
+; |tAlu|ALU:inst|74181:inst|63  ; |tAlu|ALU:inst|74181:inst|63  ; out0             ;
+; |tAlu|ALU:inst|74181:inst|58  ; |tAlu|ALU:inst|74181:inst|58  ; out0             ;
+; |tAlu|ALU:inst|74181:inst|59  ; |tAlu|ALU:inst|74181:inst|59  ; out0             ;
+; |tAlu|ALU:inst|74181:inst|62  ; |tAlu|ALU:inst|74181:inst|62  ; out0             ;
++-------------------------------+-------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 132 02/25/2009 SJ Full Version
+    Info: Processing started: Mon Apr 25 21:15:14 2022
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off simpleMachine -c simpleMachine
+Info: Using vector source file "E:/quTotal/simpleMachine.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is       0.00 %
+Info: Number of transitions in simulation is 0
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 157 megabytes
+    Info: Processing ended: Mon Apr 25 21:15:14 2022
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+
